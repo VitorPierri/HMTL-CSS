@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando tags</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(60, 164, 97);
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius:  10px;
+        }
+        nav {
+            background-color: rgb(78, 78, 78);
+            padding: 3px;
+            box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.568);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight:  bold;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        article > aside {
+            background-color: rgb(165, 165, 165);
+            border-radius: 10px;
+            text-align: center;
+        }
+        article > h2 {
+            text-align: center;
+        }
+        article > p {
+            text-align: justify;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+            border-radius: 20px;
+        }
+        footer > p {
+            margin: 0;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="Assuntos">
+            <p> Esportes politica e tecnologias</p>
+        </section>
+        <section id="Notícias">
+            <article>
+                <h2>Notícias sobre o brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sapiente vero reprehenderit eius labore deserunt incidunt atque maxime dignissimos quod quos laboriosam aut tempore, illum architecto vel eveniet aliquid officiis!</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Vitor Pierri Broering</p>
+    </footer>
+
+    <div id="bola"></div>
+
+</body>
+</html>
