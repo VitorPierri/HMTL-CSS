@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: khaki;
+            text-align: center;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            margin: auto;
+            position: relative;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead , tfoot {
+            background-color: grey;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: grey;
+        }
+        .primeiro {
+            background-color: rgb(111, 102, 102);
+        }
+        .segundo {
+            background-color: rgb(230, 230, 245);
+        }
+        .terceiro {
+            background-color: rgb(130, 128, 130);
+        }
+        .num {
+            text-align: right;
+        }
+        .text {
+            text-align: center;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes </h1>
+    <!--
+        ANATOMIA DE TABELAS GRANDES :
+        - TABLE
+            CAPITON -> LEGENDA 
+            THEAD
+                tr/td/th
+            TBODY 
+                tr/td/th
+            TFOOT 
+                tr/td/th
+    -->
+    <table>
+        <caption> População das unidades federativas </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <Tr class="primeiro">
+                <td class="text">São Paulo </td>
+                <td class="num">45 919 049</td>
+            </Tr>
+            <tr class="segundo">
+                <td class="text">Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr class="terceiro">
+                <td class="text">Rio de Janeiro </td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <Tr class="primeiro">
+                <td class="text">São Paulo </td>
+                <td class="num">45 919 049</td>
+            </Tr>
+            <tr class="segundo">
+                <td class="text">Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr class="terceiro">
+                <td class="text">Rio de Janeiro </td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <Tr class="primeiro">
+                <td class="text">São Paulo </td>
+                <td class="num">45 919 049</td>
+            </Tr>
+            <tr class="segundo">
+                <td class="text">Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr class="terceiro">
+                <td class="text">Rio de Janeiro </td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <Tr class="primeiro">
+                <td class="text">São Paulo </td>
+                <td class="num">45 919 049</td>
+            </Tr>
+            <tr class="segundo">
+                <td class="text">Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr class="terceiro">
+                <td class="text">Rio de Janeiro </td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <Tr class="primeiro">
+                <td class="text">São Paulo </td>
+                <td class="num">45 919 049</td>
+            </Tr>
+            <tr class="segundo">
+                <td class="text">Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr class="terceiro">
+                <td class="text">Rio de Janeiro </td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <Tr class="primeiro">
+                <td class="text">São Paulo </td>
+                <td class="num">45 919 049</td>
+            </Tr>
+            <tr class="segundo">
+                <td class="text">Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr class="terceiro">
+                <td class="text">Rio de Janeiro </td>
+                <td class="num">17 264 943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td class="num"><strong>210 147 125</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis enim iure id modi adipisci, vel dolores. Iste incidunt accusantium eaque velit atque corporis, sed esse ea, adipisci ducimus, quod praesentium?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, officia a maxime voluptatem, neque provident omnis pariatur at, minus impedit ut modi laboriosam! Voluptatibus facere adipisci illum debitis iusto Lorem, ipsum dolor sit amet consectetur adipisicing elit. In vitae voluptatibus tempore! Provident repudiandae aut voluptatum cum consequuntur necessitatibus! Vitae nobis cumque distinctio porro debitis commodi illo ducimus fugiat asperiores Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam expedita cum odio maiores suscipit, doloremque quod, unde atque neque quisquam sunt esse commodi vero accusamus perspiciatis consequatur consequuntur in aperiam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis enim iure id modi adipisci, vel dolores. Iste incidunt accusantium eaque velit atque corporis, sed esse ea, adipisci ducimus, quod praesentium?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, officia a maxime voluptatem, neque provident omnis pariatur at, minus impedit ut modi laboriosam! Voluptatibus facere adipisci illum debitis iusto Lorem, ipsum dolor sit amet consectetur adipisicing elit. In vitae voluptatibus tempore! Provident repudiandae aut voluptatum cum consequuntur necessitatibus! Vitae nobis cumque distinctio porro debitis commodi illo ducimus fugiat asperiores Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam expedita cum odio maiores suscipit, doloremque quod, unde atque neque quisquam sunt esse commodi vero accusamus perspiciatis consequatur consequuntur in aperiam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis enim iure id modi adipisci, vel dolores. Iste incidunt accusantium eaque velit atque corporis, sed esse ea, adipisci ducimus, quod praesentium?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, officia a maxime voluptatem, neque provident omnis pariatur at, minus impedit ut modi laboriosam! Voluptatibus facere adipisci illum debitis iusto Lorem, ipsum dolor sit amet consectetur adipisicing elit. In vitae voluptatibus tempore! Provident repudiandae aut voluptatum cum consequuntur necessitatibus! Vitae nobis cumque distinctio porro debitis commodi illo ducimus fugiat asperiores Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam expedita cum odio maiores suscipit, doloremque quod, unde atque neque quisquam sunt esse commodi vero accusamus perspiciatis consequatur consequuntur in aperiam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis enim iure id modi adipisci, vel dolores. Iste incidunt accusantium eaque velit atque corporis, sed esse ea, adipisci ducimus, quod praesentium?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, officia a maxime voluptatem, neque provident omnis pariatur at, minus impedit ut modi laboriosam! Voluptatibus facere adipisci illum debitis iusto Lorem, ipsum dolor sit amet consectetur adipisicing elit. In vitae voluptatibus tempore! Provident repudiandae aut voluptatum cum consequuntur necessitatibus! Vitae nobis cumque distinctio porro debitis commodi illo ducimus fugiat asperiores Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam expedita cum odio maiores suscipit, doloremque quod, unde atque neque quisquam sunt esse commodi vero accusamus perspiciatis consequatur consequuntur in aperiam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis enim iure id modi adipisci, vel dolores. Iste incidunt accusantium eaque velit atque corporis, sed esse ea, adipisci ducimus, quod praesentium?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, officia a maxime voluptatem, neque provident omnis pariatur at, minus impedit ut modi laboriosam! Voluptatibus facere adipisci illum debitis iusto Lorem, ipsum dolor sit amet consectetur adipisicing elit. In vitae voluptatibus tempore! Provident repudiandae aut voluptatum cum consequuntur necessitatibus! Vitae nobis cumque distinctio porro debitis commodi illo ducimus fugiat asperiores Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam expedita cum odio maiores suscipit, doloremque quod, unde atque neque quisquam sunt esse commodi vero accusamus perspiciatis consequatur consequuntur in aperiam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis enim iure id modi adipisci, vel dolores. Iste incidunt accusantium eaque velit atque corporis, sed esse ea, adipisci ducimus, quod praesentium?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, officia a maxime voluptatem, neque provident omnis pariatur at, minus impedit ut modi laboriosam! Voluptatibus facere adipisci illum debitis iusto Lorem, ipsum dolor sit amet consectetur adipisicing elit. In vitae voluptatibus tempore! Provident repudiandae aut voluptatum cum consequuntur necessitatibus! Vitae nobis cumque distinctio porro debitis commodi illo ducimus fugiat asperiores Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam expedita cum odio maiores suscipit, doloremque quod, unde atque neque quisquam sunt esse commodi vero accusamus perspiciatis consequatur consequuntur in aperiam.</p>
+</body>
+</html>
