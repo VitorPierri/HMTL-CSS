@@ -8,19 +8,172 @@
         * {
             font-family: Arial, Helvetica, sans-serif;
         }
+        body {
+            background-color: rgb(132, 86, 178);
+        }
+        p#sub {
+            font-size: 0.7em;
+            margin: 30px;
+            padding-bottom: 20px;
+            font-weight: bold;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            font-size: 1em;
+            margin: 20px;
+        }
+        h2#baixo {
+            font-size: 1em;
+            margin: 20px;
+            padding-bottom: 10px;
+        }
+        form {
+            text-align: justify;
+        }
+        div#ex {
+            border: 1px solid black;
+            background-color: skyblue;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.573);
+        }
+        body>header {
+            border: 1px solid black;
+            background-color: skyblue;
+            margin-bottom: 50px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.573);
+        }
     </style>
 </head>
 <body>
-    <h1>Meu Primeiro formulario</h1>
+    <header>
+        <h1>Meu Primeiro formulario</h1>
+        <p id="sub">Neste site irei colocar diversos tipos de input para formularios e explica-los:</p>
+    </header>    
+        <!-- todo formulário deve estar dentro da tag <form> -->
+        <!-- a função action esta vinculada para a parte back end , para onde vai -->
+        <!-- A função auto complete é usada para que a memoria do navegador preencha automaticamente os campos -->
+        <!-- A label for=""></label> serve literalmente para dar nome aos bois , a caixa com a escrita tal é de campo tal -->
+        <!-- Sempre usar o FOR para o ID e colocar por exemplo "inome" (id) + nome -->
+        <!-- Sempre usar method="POST" não é a melhor coisa do mundo para segurança mas ja ajuda a esconder da url -->
+    <main>    
+            <form action="cadastro.php" autocomplete="on" method="post">
+        
+            <div id="ex">
+                <h2>Neste caso estamos utilizando o input do type="text" para os campos de Nome e Sobrenome</h2>
+                <h2>Para o campo de limpar estamos utilizando o input: type="reset"</h2>
+                <h2 id="baixo">Para o botão de enviar estamos usando o input do type="submit"</h2>
+            </div>
+        
+           <p>
+              <label for="inome">Nome:</label>
+              <input type="text" name="nome" id="inome" required>
+           </p>
+           <p>
+              <label for="isobre">Sobrenome:</label>
+              <input type="text" name="sobre" id="isobre" required>
+           </p>
+           <p>
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Limpar">
+           </p>
+        
+        </form>
 
-    <form action="cadastro.php" autocomplete="off" method="post">
+        <!-- todo formulário deve estar dentro da tag <form> -->
+        <!-- a função action esta vinculada para a parte back end , para onde vai -->
+        <!-- A função autocomplete é usada para que a memoria do navegador preencha automaticamente os campos -->
+             <!-- ATENÇÂO esta função a cima do auto complete é apenas quando ele está dentro da tag <form>-->
+             <!-- PORÈM quando colocado dentro do input tem diversas funções especificas , ele ira completar tambem , porem especificamente-->
+        <!-- A label for=""></label> serve literalmente para dar nome aos bois , a caixa com a escrita tal é de campo tal -->
+        <!-- Sempre usar o FOR para o ID e colocar por exemplo "inome" (id) + nome -->
+        <!-- Sempre usar method="POST" não é a melhor coisa do mundo para segurança mas ja ajuda a esconder da url -->
+        <!-- Sempre usamos para campos Obrigatórios a função required para que o formulario siga regras necessárias -->
+        <!-- Utilizamos as limitacoes de minlength="" maxlength="" para definir minimos e máximos de caractéres-->
+        <!-- O size="" é o campo que programamos para definir quantas o tamanho do campo ( espassamento ) de quantos caractéres -->
+        <!-- O placeholder="" serve para quando queremos dar uma "dica" para a pessoa , como ? deixando sobre escrito no campo -->
 
-        <p><label for="inome">Nome:</label> <input type="text" name="Nome" id="inome"></p>
+        <form action="cadastro.php" autocomplete="on" method="post">
+        
+            <div id="ex">
+                <h2>Neste caso estamos utilizando o input do type="text" para os campo de Nome de usuário</h2>
+                <h2>Para o campo de senha estamos utilizando o input: type="password" desta forma ele esconde os caractéres</h2>
+                <h2>Para o campo de limpar estamos utilizando o input: type="reset"</h2>
+                <h2 id="baixo"> Para o botão de enviar estamos usando o input do type="submit"</h2>
+            </div>
+        
+           <p>
+              <label for="iusu">Nome de usuário:</label>
+              <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="20" placeholder="Nome de usuário" autocomplete="username">
+           </p>
+           <p>
+              <label for="ipass">Senha:</label>
+              <input type="password" name="pass" id="ipass" required autocomplete="new-password">
+           </p>
+           <p>
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Limpar">
+           </p>
+        
+        </form>
 
-        <p><label for="isobrenome">Sobrenome: </label><input type="text" name="Sobrenome" id="isobrenome"></p>
+                <!-- todo formulário deve estar dentro da tag <form> -->
+        <!-- a função action esta vinculada para a parte back end , para onde vai -->
+        <!-- A função autocomplete é usada para que a memoria do navegador preencha automaticamente os campos -->
+             <!-- ATENÇÂO esta função a cima do auto complete é apenas quando ele está dentro da tag <form>-->
+             <!-- PORÈM quando colocado dentro do input tem diversas funções especificas , ele ira completar tambem , porem especificamente-->
+        <!-- A label for=""></label> serve literalmente para dar nome aos bois , a caixa com a escrita tal é de campo tal -->
+        <!-- Sempre usar o FOR para o ID e colocar por exemplo "inome" (id) + nome -->
+        <!-- Sempre usar method="POST" não é a melhor coisa do mundo para segurança mas ja ajuda a esconder da url -->
+        <!-- Sempre usamos para campos Obrigatórios a função required para que o formulario siga regras necessárias -->
+        <!-- Utilizamos as limitacoes de minlength="" maxlength="" para definir minimos e máximos de caractéres-->
+            <!-- Temos que saber diferenciar , minlength="" maxlength="" de min e max ( max e min de uma caixa numerica , usamos no input number )-->
+        <!-- O size="" é o campo que programamos para definir quantas o tamanho do campo ( espassamento ) de quantos caractéres -->
+        <!-- O placeholder="" serve para quando queremos dar uma "dica" para a pessoa , como ? deixando sobre escrito no campo -->
+        <!-- A função step="" para campo numerico , demonstra de quantos e quantos pedaços ele pulara -->
+        <!-- Value é usado para dar valor a algo -->
+        <!-- Para um campo que aparece mes e ano input: type="month"-->
+        <!-- Para p campo do tipo data utilizamos o input : type="data" -->
+        <!-- Para p campo do tipo hora utilizamos o input : type="time" -->
 
-        <p><input type="submit" value="Enviar"></p>
+        <form action="" method="post"></form>
 
-    </form>
+        <div id="ex">
+            <h2>Neste caso estamos utilizando o input do type="text" para os campo de Nome de usuário</h2>
+            <h2>Para o campo de media estamos utilizando o input: type="number" este campo mostra apenas numeros</h2>
+            <h2>Para o campo de limpar estamos utilizando o input: type="reset"</h2>
+            <h2>Para o campo do tipo mes utilizamos o input: type="month" </h2>
+            <h2>Para p campo do tipo data utilizamos o input : type="data"</h2>
+            <h2>Para p campo do tipo hora utilizamos o input : type="time"</h2>
+            <h2 id="baixo"> Para o botão de enviar estamos usando o input do type="submit"</h2>
+        </div>
+
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="imedia" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5">
+        </p>
+        <p>
+            <label for="imes">Periodo letivo</label>
+            <input type="month" name="mes" id="imes" value="2024-06">
+        </p>
+        <p>
+            <label for="idia">data da prova</label>
+            <input type="date" name="dia" id="idia">
+        </p>
+        <p>
+            <label for="ihora">Hora da prova</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </main>
+
+</form>
 </body>
 </html>
