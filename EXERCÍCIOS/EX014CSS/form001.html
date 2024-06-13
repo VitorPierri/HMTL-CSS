@@ -36,12 +36,16 @@
             border: 1px solid black;
             background-color: skyblue;
             box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.573);
+            margin-bottom: 25px;
         }
         body>header {
             border: 1px solid black;
             background-color: skyblue;
             margin-bottom: 50px;
             box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.573);
+        }
+        fieldset {
+            border: 4px solid black;
         }
     </style>
 </head>
@@ -172,6 +176,190 @@
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
+
+        
+        <!-- todo formulário deve estar dentro da tag <form> -->
+        <!-- a função action esta vinculada para a parte back end , para onde vai -->
+        <!-- A função autocomplete é usada para que a memoria do navegador preencha automaticamente os campos -->
+             <!-- ATENÇÂO esta função a cima do auto complete é apenas quando ele está dentro da tag <form>-->
+             <!-- PORÈM quando colocado dentro do input tem diversas funções especificas , ele ira completar tambem , porem especificamente-->
+        <!-- A label for=""></label> serve literalmente para dar nome aos bois , a caixa com a escrita tal é de campo tal -->
+        <!-- Sempre usar o FOR para o ID e colocar por exemplo "inome" (id) + nome -->
+        <!-- Sempre usar method="POST" não é a melhor coisa do mundo para segurança mas ja ajuda a esconder da url -->
+        <!-- Sempre usamos para campos Obrigatórios a função required para que o formulario siga regras necessárias -->
+        <!-- Utilizamos as limitacoes de minlength="" maxlength="" para definir minimos e máximos de caractéres-->
+            <!-- Temos que saber diferenciar , minlength="" maxlength="" de min e max ( max e min de uma caixa numerica , usamos no input number )-->
+        <!-- O size="" é o campo que programamos para definir quantas o tamanho do campo ( espassamento ) de quantos caractéres -->
+        <!-- O placeholder="" serve para quando queremos dar uma "dica" para a pessoa , como ? deixando sobre escrito no campo -->
+        <!-- A função step="" para campo numerico , demonstra de quantos e quantos pedaços ele pulara -->
+        <!-- Value é usado para dar valor a algo -->
+        <!-- Para um campo que aparece mes e ano input: type="month"-->
+        <!-- Para p campo do tipo data utilizamos o input : type="data" -->
+        <!-- Para p campo do tipo hora utilizamos o input : type="time" -->
+        <!-- Para o campo do tipo email utilizamos o input type="email" -->
+        <!-- Para o campo do tipo telefone utilizamos o input type="tel" -->
+        <!-- FIELDSET é uma tag utilizada para agrupamento de campos -->
+        <!-- o FIELDSET é legal sempre acompanhar uma tag <legend> para diferenciação de campos-->
+
+
+        <form action="" method="post" autocomplete="on"></form>
+
+        <div id="ex">
+            <h2>Para o campo de email usamos input type="email"</h2>
+            <h2>Para o campo de limpar estamos utilizando o input: type="reset"</h2>
+            <h2 id="baixo"> Para o botão de enviar estamos usando o input do type="submit"</h2>
+        </div>
+
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required>
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <input type="submit" value="enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+
+               <!-- todo formulário deve estar dentro da tag <form> -->
+        <!-- a função action esta vinculada para a parte back end , para onde vai -->
+        <!-- A função autocomplete é usada para que a memoria do navegador preencha automaticamente os campos -->
+             <!-- ATENÇÂO esta função a cima do auto complete é apenas quando ele está dentro da tag <form>-->
+             <!-- PORÈM quando colocado dentro do input tem diversas funções especificas , ele ira completar tambem , porem especificamente-->
+        <!-- A label for=""></label> serve literalmente para dar nome aos bois , a caixa com a escrita tal é de campo tal -->
+        <!-- Sempre usar o FOR para o ID e colocar por exemplo "inome" (id) + nome -->
+        <!-- Sempre usar method="POST" não é a melhor coisa do mundo para segurança mas ja ajuda a esconder da url -->
+        <!-- Sempre usamos para campos Obrigatórios a função required para que o formulario siga regras necessárias -->
+        <!-- Utilizamos as limitacoes de minlength="" maxlength="" para definir minimos e máximos de caractéres-->
+            <!-- Temos que saber diferenciar , minlength="" maxlength="" de min e max ( max e min de uma caixa numerica , usamos no input number )-->
+        <!-- O size="" é o campo que programamos para definir quantas o tamanho do campo ( espassamento ) de quantos caractéres -->
+        <!-- O placeholder="" serve para quando queremos dar uma "dica" para a pessoa , como ? deixando sobre escrito no campo -->
+        <!-- A função step="" para campo numerico , demonstra de quantos e quantos pedaços ele pulara -->
+        <!-- Value é usado para dar valor a algo -->
+        <!-- Para um campo que aparece mes e ano input: type="month"-->
+        <!-- Para p campo do tipo data utilizamos o input : type="data" -->
+        <!-- Para p campo do tipo hora utilizamos o input : type="time" -->
+        <!-- Para o campo do tipo email utilizamos o input type="email" -->
+        <!-- Para o campo do tipo telefone utilizamos o input type="tel" -->
+        <!-- FIELDSET é uma tag utilizada para agrupamento de campos -->
+        <!-- o FIELDSET é legal sempre acompanhar uma tag <legend> para diferenciação de campos-->
+        <!-- Quando vamos fazer um formulario para sexo utilizamos o input type="radio"-->
+             <!-- Porem uma pecuiliaridade é que geralmente se coloca varios , como : max , fem etc... porem no type radio , o name deve ser igual para marcar 1 e desmarcar o outro-->
+        <!-- Para checkbox utilizamos input type="checkbox"-->
+        <!--a funcção checked , faz com que o input marcado com esta função ja apareça selecionado -->
+
+        <form action="cadastro.php" method="post">
+
+            <div id="ex">
+                <h2>Para o campo de sexo usamos input type="radio""</h2>
+                <h2>Porem uma pecuiliaridade é que geralmente se coloca varios , como : max , fem etc... porem no type radio , o name deve ser igual para marcar 1 e desmarcar o outro</h2>
+                <h2>Para checkbox utilizamos input type="checkbox"
+                <h2>a funcção checked , faz com que o input marcado com esta função ja apareça selecionado</h2>
+                <h2>Para o campo de limpar estamos utilizando o input: type="reset"</h2>
+                <h2 id="baixo"> Para o botão de enviar estamos usando o input do type="submit"</h2>
+            </div>
+                <fieldset>
+                    <legend>Sexo</legend>
+
+                    <label for="isexmax">
+                        <input type="radio" name="sex" id="isexmax" checked>Masculino
+                    </label>
+
+                    <label for="isexfem">
+                        <input type="radio" name="sex" id="isexfem">feminino
+                    </label>
+
+                </fieldset>
+                <fieldset>
+
+                    <legend>Esportes favoritos</legend>
+
+                    <p>
+                        <label for="iesfut"><input type="checkbox" name="esfut" id="iesfut">Futebol <br></label>
+                        
+                        <label for="iesbas"><input type="checkbox" name="esbas" id="iesbas">Basquete<br></label>
+
+                        <label for="ieshokey"><input type="checkbox" name="esHokey" id="ieshokey">Hokey<br></label>
+
+                        <label for="iestenis"><input type="checkbox" name="estenis" id="iestenis">tenis<br></label>
+                    </p>
+
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+        </form>
+
+        <!-- todo formulário deve estar dentro da tag <form> -->
+        <!-- a função action esta vinculada para a parte back end , para onde vai -->
+        <!-- A função autocomplete é usada para que a memoria do navegador preencha automaticamente os campos -->
+             <!-- ATENÇÂO esta função a cima do auto complete é apenas quando ele está dentro da tag <form>-->
+             <!-- PORÈM quando colocado dentro do input tem diversas funções especificas , ele ira completar tambem , porem especificamente-->
+        <!-- A label for=""></label> serve literalmente para dar nome aos bois , a caixa com a escrita tal é de campo tal -->
+        <!-- Sempre usar o FOR para o ID e colocar por exemplo "inome" (id) + nome -->
+        <!-- Sempre usar method="POST" não é a melhor coisa do mundo para segurança mas ja ajuda a esconder da url -->
+        <!-- Sempre usamos para campos Obrigatórios a função required para que o formulario siga regras necessárias -->
+        <!-- Utilizamos as limitacoes de minlength="" maxlength="" para definir minimos e máximos de caractéres-->
+            <!-- Temos que saber diferenciar , minlength="" maxlength="" de min e max ( max e min de uma caixa numerica , usamos no input number )-->
+        <!-- O size="" é o campo que programamos para definir quantas o tamanho do campo ( espassamento ) de quantos caractéres -->
+        <!-- O placeholder="" serve para quando queremos dar uma "dica" para a pessoa , como ? deixando sobre escrito no campo -->
+        <!-- A função step="" para campo numerico , demonstra de quantos e quantos pedaços ele pulara -->
+        <!-- Value é usado para dar valor a algo -->
+        <!-- Para um campo que aparece mes e ano input: type="month"-->
+        <!-- Para p campo do tipo data utilizamos o input : type="data" -->
+        <!-- Para p campo do tipo hora utilizamos o input : type="time" -->
+        <!-- Para o campo do tipo email utilizamos o input type="email" -->
+        <!-- Para o campo do tipo telefone utilizamos o input type="tel" -->
+        <!-- FIELDSET é uma tag utilizada para agrupamento de campos -->
+        <!-- o FIELDSET é legal sempre acompanhar uma tag <legend> para diferenciação de campos-->
+        <!-- Quando vamos fazer um formulario para sexo utilizamos o input type="radio"-->
+             <!-- Porem uma pecuiliaridade é que geralmente se coloca varios , como : max , fem etc... porem no type radio , o name deve ser igual para marcar 1 e desmarcar o outro-->
+        <!-- Para checkbox utilizamos input type="checkbox"-->
+        <!--a funcção checked , faz com que o input marcado com esta função ja apareça selecionado -->
+        <!-- Para color utilizamops o input type="color"-->
+        <!-- digamos que para um nivel , utilizamos o input: type="range"-->
+             <!-- na função range devemos especificar min e max , e o value-->
+        <!-- para função de colocar uma midia utilizamos o input: type="file"-->
+
+        <form action="cadastro.php" method="post">
+
+            <div id="ex">
+                <h2>Para color utilizamops o input type="color"</h2>
+                <h2>digamos que para um nivel , utilizamos o input: type="range"</h2>
+                <h2>a função range devemos especificar min e max , e o value
+                <h2>para função de colocar uma midia utilizamos o input: type="file"</h2>
+                <h2>Para o campo de limpar estamos utilizando o input: type="reset"</h2>
+                <h2 id="baixo"> Para o botão de enviar estamos usando o input do type="submit"</h2>
+            </div>
+
+        <fieldset>
+            <legend>Color   Range e File</legend>
+            <p>
+                <label for="icolor">Color
+                    <input type="color" name="color" id="icolor">
+                </label>
+            </p>
+            <p>
+                <label for="inivel">Nivel de satisfação</label>
+                    <input type="range" name="nivel" id="inivel" min="0" max="100" value="0">
+            </p>
+            <p>
+                <label for="ifoto">Foto de perfil</label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        </form>
     </main>
 
 </form>
