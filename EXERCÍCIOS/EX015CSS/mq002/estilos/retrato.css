@@ -3,7 +3,10 @@
 /*Modo retrato*/
 
 body {
+    background-color: rgb(255, 0, 0);
     background: url(..//Imagens/cev-portrait.jpg);
     background-size: cover;
-    
+    background-position: center bottom;
+    width: 98vw ;
+    height: 98vh;
 }

@@ -3,5 +3,8 @@
 /*Modo paisagem*/
 
 body {
-    background-color: blueviolet;
+    background: url(..//Imagens/cev-landscape.jpg);
+    background-position:left bottom ;
+    width: 98vw;
+    height: 98vh;
 }
