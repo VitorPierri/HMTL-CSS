@@ -4,11 +4,15 @@
     span.material-symbols-outlined{
         display: none;
     }
+
     menu {
         display: block;
     }
     menu > ul >li {
         display: inline-block;
+        width: 150px;
+        margin: auto;
+        padding-left: 15px;
     }
     main {
         width: 768px;
